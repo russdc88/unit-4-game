@@ -117,7 +117,7 @@ $(document).ready(function(){
 
 		console.log(randomScore)
 
-		$("#totalCrystalScore").html("<p class = 'big>" + randomScore + "</p>")
+		$("#totalCrystalScore").html("<p class = 'big'>" + randomScore + "</p>")
 
 		if (randomScore === computerValue) {
 			playerScore ++;
