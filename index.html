@@ -7,14 +7,51 @@
 	<!-- links  -->
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<script src="./assets/javascript/game.js"></script>
 	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="./assets/javascript/game.js"></script>
+	
 <!--        -->
 
-	<title>Document</title>
+	<title>Crystal Collector!</title>
 </head>
-<body>
+<body class="text-center">
+	<div class="container-fill">
+		<h1>Crystal Collector!</h1>
+	</div>
+	<div class="container">
+	<div>
+		<h3>Instructions</h3>
+		<p>At the beginning of the game you will be given a random number.</p>
+		<p>There are four crystals below. When you click a crystal, you will be given amount of points. Each time you click a crystal, you score will add up.</p>
+		<p>To win you must get your points to equal the random number. If you go over, you lose.</p>
+		<p>You will not know the value of the crystal until you click it.</p>
+		<p>After the game is over, the game will reset with new numbers for the crystal and a new random number.</p>
+
+	</div>
+
+	<div id="randomNumber"></div>
+
+	<div id="player-Computer-Score">
+		<p>	Player's Score: <span id="playerWin"></span> </p>
+		<p>	Computer's Score: <span id="computerWin"></span> </p>
+	</div>
+
+	<div id="crystals" class="myCrystals">
+		<img src="./assets/images/redGem.png" alt="" class="col-sm-2" id="crystal-1">
+		<img src="./assets/images/greenGem.png" alt="" class="col-sm-2" id="crystal-2">
+		<img src="./assets/images/Amethyst.png" alt="" class="col-sm-2" id="crystal-3">
+		<img src="./assets/images/Sapphire.png" alt="" class="col-sm-2" id="crystal-4">
+
+	</div>
+
+	<div id="totalScore" >
+		<p class="big">Your Crystal score:</p>
+	</div>
+
+	<div id="totalCrystalScore" class="redText">
 	
+	</div>
+	</div>
 </body>
 
 </html>
